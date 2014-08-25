@@ -9,11 +9,6 @@ var points = [
 
 var lastpoint = [0,0];
 
-var fname = 0;
-function setfname(how){
-  fname+= how;
-  document.GetElementById("#iter").value = fname;
-}
 function begin(e)
 {
   if(lastpoint[0] == 0){
