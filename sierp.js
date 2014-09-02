@@ -12,6 +12,12 @@ var lastpoint = [0,0];
 function begin(e)
 {
   if(lastpoint[0] === 0){
+     c.beginPath();
+     c.moveTo(0,400);
+     c.lineTo(200,0);
+     c.lineTo(400,400);
+     c.lineTo(0,400);
+     c.stroke();
      var rect = canvas.getBoundingClientRect();
      var initialx = e.clientX - rect.left;
      var initaly = e.clientY - rect.top;
@@ -21,15 +27,6 @@ function begin(e)
      drawPoint(lastpoint[0],lastpoint[1],1000);
    }
 }
-function drawTriangle(){
-  c.beginPath();
-  c.moveTo(0,400);
-  c.lineTo(200,0);
-  c.lineTo(400,400);
-  c.lineTo(0,400);
-  c.stroke();
-}
-
 function drawPoint(x, y, iii){
   if(iii === 0)
   {
