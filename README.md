@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/andrey-shakhzadyan/js-chaosgame/badges/gpa.svg)](https://codeclimate.com/github/andrey-shakhzadyan/js-chaosgame)
+
 js-chaosgame
 ============
 
