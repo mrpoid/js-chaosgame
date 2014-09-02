@@ -5,20 +5,20 @@ var points = [
   [0,400],
   [200,0],
   [400,400],
-]
+];
 
 var lastpoint = [0,0];
 
 function begin(e)
 {
-  if(lastpoint[0] == 0){
+  if(lastpoint[0] === 0){
      var rect = canvas.getBoundingClientRect();
      var initialx = e.clientX - rect.left;
      var initaly = e.clientY - rect.top;
      drawPoint(initialx, initaly,1000);
    }
    else {
-     drawPoint(lastpoint[0],lastpoint[1],1000)
+     drawPoint(lastpoint[0],lastpoint[1],1000);
    }
 }
 function drawTriangle(){
